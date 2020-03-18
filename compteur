@@ -160,8 +160,7 @@ def gerer_click():
 
 
 def connexion_bouton(sortie_bouton):
-	off_cd = 15
-	off_aff = 27
+	
 	for i in range(0, 7):
 		if sortie_bouton == 0:
 			couleur = NOIR
@@ -169,8 +168,7 @@ def connexion_bouton(sortie_bouton):
 			couleur = ROUGE
 		pygame.draw.line(fenetre, couleur, (pin_bouton ),
 			(pin_arduino ), 5)
-		off_aff = off_aff + 19
-		off_cd = off_cd + 19
+		
 
 	return
 
