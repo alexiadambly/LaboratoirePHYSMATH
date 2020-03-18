@@ -77,7 +77,7 @@ def dessiner_afficheur(sortie_CD4511):
 		i = i + 1
 	return
 
-def sortie_memorisee():
+def sortie_memorisee(variable_memorisee):
 	global variable_memorisee
 	print('petite fleur')
 	valeur_memorisee = variable_memorisee
