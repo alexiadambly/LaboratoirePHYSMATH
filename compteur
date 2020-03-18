@@ -156,7 +156,7 @@ def composant_CD4511(entree):
 def gerer_click():
 	global variable_memorisee 
 	variable_memorisee = (variable_memorisee +1) %10
-	return 0
+	return variable_memorisee
 
 
 def connexion_bouton(sortie_bouton):
