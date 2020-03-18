@@ -160,7 +160,18 @@ def gerer_click():
 
 
 def connexion_bouton(sortie_bouton):
-	pygame.draw.line(fenetre, rouge, pin-arduino,pin_bouton + off_aff),
+	off_cd = 15
+	off_aff = 27
+	for i in range(0, 7):
+		if sortie_bouton == 0:
+			couleur = NOIR
+		else:
+			couleur = ROUGE
+		pygame.draw.line(fenetre, couleur, (pos_afficheur[0], pos_afficheur[1] + off_aff),
+			(pos_CD4511[0] + 102, pos_CD4511[1] + off_cd), 5)
+		off_aff = off_aff + 19
+		off_cd = off_cd + 19
+
 	return
 
 ### Paramètre(s)
