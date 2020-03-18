@@ -160,6 +160,7 @@ def gerer_click():
 
 
 def connexion_bouton(sortie_bouton):
+	pygame.draw.line(fenetre, rouge, pin-arduino,pin_bouton + off_aff),
 	return
 
 ### Paramètre(s)
