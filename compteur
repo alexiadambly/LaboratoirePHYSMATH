@@ -78,7 +78,7 @@ def dessiner_afficheur(sortie_CD4511):
 	return
 
 def sortie_memorisee(variable_memorisee):
-	global variable_memorisee
+	
 	print('petite fleur')
 	valeur_memorisee = variable_memorisee
 	
@@ -229,7 +229,7 @@ while True:
 	sortie_bouton = 0
 	fenetre.fill(couleur_fond)
     
-	sortie_CD4511 = composant_CD4511(sortie_memorisee())
+	sortie_CD4511 = composant_CD4511(sortie_memorisee(variable_memorisee))
    
 	dessiner_afficheur(sortie_CD4511)
 	dessiner_arduino(sortie_memorisee(), sortie_CD4511, sortie_bouton)
